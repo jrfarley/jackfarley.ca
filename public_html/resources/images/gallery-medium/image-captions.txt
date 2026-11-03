@@ -1,0 +1,36 @@
+atpu.jpg--Atlantic Puffins in Newfoundland
+bado.jpg--Barred Owl in Toronto, Ontario
+bbhu.jpg--Broad-billed Hummingbird in Arizona
+bear.jpg--American Black Bear in Alberta
+cacw.jpg--Cactus Wren in Arizona
+caja.jpg--Canada Jay in Alberta
+cedw.jpg--Cedar Waxwing in Toronto, Ontario
+deer.jpg--White-tailed Deer on Georgian Bay, Ontario
+elk.jpg--Wapiti in Alberta
+frog1.jpg--Imbabura Tree Frog in Esmeraldas Province, Ecuador
+frog2.jpg--Yellow-flecked Glassfrogs in the Esmaraldas Province, Ecuador
+goats.jpg--Mountain Goats in Alberta
+grro.jpg--Greater Roadrunner in Arizona
+jaeger.jpg--Long-tailed Jaeger in Hamilton, Ontario
+lebi.jpg--Least Bittern in Toronto, Ontario
+moth1.jpg--Epia muscosa in the Pichincha Province, Ecuador
+sheep.jpg--Bighorn Sheep in Alberta
+moth3.jpg--Hemeroblemma laguerrei in the Napo Province, Ecuador
+moth4.jpg--Hypercompe nemophila in the Napo Province, Ecuador
+musw.jpg--Mute Swans in Toronto, Ontario
+nowa.jpg--Northern Waterthrush in Hastings County, Ontario
+ospr.jpg--Osprey in Hastings County, Ontario
+pigr.jpg--Pine Grosbeak in Toronto, Ontario
+pika.jpg--American Pika in Alberta
+pyrr.jpg--Pyrrhuloxia in Arizona
+rabbit.jpg--European Rabbit in England
+sesa.jpg--Semipalmated Sandpiper on James Bay, Ontario
+snow.jpg--Snowy Owl in Toronto, Ontario
+sosp.jpg--Song Sparrow in Hastings County, Ontario
+amfl.jpg--American Flamingos in Celestun, Mexico
+pbmt.jpg--Plate-billed Mountain-Toucan at Balcon Tumpiki, Ecuador
+buph.jpg--Bulwer&#39;s Pheasant in Sabah, Malaysia
+crpa.jpg--Crested Partridge in Sabah, Malaysia
+macaque.jpg--Long-tailed Macaque in Singapore
+sogr.jpg--Sooty Grouse in Vancouver, BC
+stja.jpg--Steller&#39;s Jay in Vancouver, BC

@@ -1,0 +1,27 @@
+.footer{ /*Footer for each page to display contact info*/
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  width: min(80%, 500px);
+}
+
+.icon-container { /*Icons for contact info*/
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.contact-container {  /*Container for contact icon and info*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+}

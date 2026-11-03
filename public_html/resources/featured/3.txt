@@ -1,0 +1,13 @@
+--Background Image--
+../resources/images/featured/ormenophlebia.jpg
+
+--Title--
+Dragonflies of the Sustainable Roots Reserve
+
+--Link--
+Odonate_Survey.pdf
+
+--Preview--
+I spent January to May or 2022 as an intern at the Sustainable Roots Foundation in Cosanga, Ecuador. During 
+that time I conducted regular dragonfly surveys of the Sustainable Roots Reserve. I observed 10 different 
+species at the reserve, several of which are endemic to the region.

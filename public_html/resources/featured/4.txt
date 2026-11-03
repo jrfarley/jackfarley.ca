@@ -1,0 +1,15 @@
+--Background Image--
+../resources/images/featured/lichen.jpg
+
+--Title--
+Epiphytes of Urban Vancouver
+
+--Link--
+https://open.library.ubc.ca/soa/cIRcle/collections/undergraduateresearch/51869/items/1.0398550
+
+--Preview--
+In my first year at UBC I was assigned a research project. My 
+collaborator Ally Howard and I chose to do ours comparing the 
+epiphytic community compositions of native and nonnative hardwood 
+species on the UBC Vancouver Campus. Our paper was selected for 
+publication in UBC’s online repository cIRcle.

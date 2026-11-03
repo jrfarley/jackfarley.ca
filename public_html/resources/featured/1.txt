@@ -1,0 +1,17 @@
+--Background Image--
+resources/images/featured/hzam.jpg
+
+--Title--
+Assortative mating in hybrid zones
+
+--Link--
+https://www.biorxiv.org/content/10.64898/2026.07.23.740407v1.full.pdf
+
+--Date--
+August 31, 2026
+
+--Preview--
+In 2023 I began working with Dr. Irwin from the UBC Zoology Department on a 
+computer model of secondary contact between two populations with incomplete 
+reproductive isolation. Our research focuses on the role of mate search costs 
+and pleiotropy in preserving distinct mating types.

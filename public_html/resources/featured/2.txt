@@ -1,0 +1,15 @@
+--Background Image--
+../resources/images/featured/kivu.jpg
+
+--Title--
+Birds of Tesoro Escondido
+
+--Link--
+tesoro_birds.html
+
+--Preview--
+In November 2021 I spent two weeks volunteering for the Jocotoco 
+Foundation at Reserva Tesoro Escondido leading bird inventory 
+efforts. During that time I recorded 228 species of birds including 
+endangered species such as Great Green Macaw, Purple Quail-Dove, 
+and Baudo Guan.

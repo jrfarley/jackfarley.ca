@@ -1,0 +1,285 @@
+*{/*Global variables*/
+  --max-header-height: min(170px, 34vw);
+  --min-header-height: min(160px, 30vw);
+  --menu-width: 600px;
+}
+
+#header {          /*Formats the header at the top of the page*/
+  background-color: white !important;
+  width: 100%;
+  transition: 0.2s;
+  height: var(--max-header-height);
+  min-height: max-content;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .4);
+}
+
+.small-header{  /*Minimizes the header*/
+  height: var(--min-header-height) !important;
+  min-height: max-content;
+}
+
+#header-display {   /*Container for the header items*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min(1200px, 85vw);
+  min-width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: calc(100% - 30px);
+  max-height: inherit;
+}
+
+#title {
+  font-family: 'Cinzel', serif;
+  font-size: min(60px, 10vw);
+}
+
+#menu {             /*Container for the header menu items*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  background: white;
+  background-color: white;
+}
+
+.menu-item {        /*Formatting for menu items in the header*/
+  color : black;
+  background-color: inherit;
+  font-weight: bold;
+  align-self: flex-end;
+  font-size: min(18px, 3.5vw);
+  text-align: center;
+  align-self: center;
+  width: auto;
+  margin: min(15px, 2vw);
+  margin-top: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: white;
+}
+
+.menu-item:hover {  /*Change colour of menu item on hover*/
+  color: #5A5A5A;
+}
+
+#contact-menu-item {  /*Menu item for contact*/
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#contact-menu-item:hover{ /*Change colour of contact menu item border on hover*/
+  border-color: #5A5A5A;
+}
+
+#header a{     /*Removes underline from links in menu*/
+  text-decoration: none;
+  color: black;
+}
+
+/*Formatting for the dropdown menu in the header when the window is too narrow
+to display the whole header*/
+
+#menu-dropdown {      /*Formatting for the dropdown menu*/
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 100% !important;
+  left: 0;
+  top: var(--max-header-height);
+  max-height: calc(100vh - var(--max-header-height));
+
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  border-color: grey;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 0px;
+  transition: height 200ms linear;
+  -moz-transition: height 200ms linear;
+  -webkit-transition: height 200ms linear;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, .6);
+}
+
+#menu-dropdown .menu-item {   /*Formatting for menu items in the dropdown*/
+  width: 100%!important;
+  position: static  ;
+  margin: auto;
+  top: 0px;
+
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: grey;
+  /*margin-left: -25px;
+  padding-right:18px;*/
+}
+
+#menu-dropdown ul{  /*make dropdown fill horizontal space*/
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+#menu-dropdown li { /*make dropdown items fill horizontal space*/
+  width: 100%;
+  background-color: white;
+}
+
+#menu-dropdown.opened {   /*Formatting change when dropdown is opened*/
+  height: min-content;
+  border-style: solid;
+}
+
+#menu-dropdown.closed {   /*IS THIS NECESSARY??*/
+  /*height: 0px;*/
+}
+
+@media only screen and (max-height: 500px){   /*Menu dropdown formatting for short windows*/
+  #menu-dropdown {
+    min-height: 50px;
+    height: 60vh;
+    overflow-y: scroll;
+  }
+}
+
+
+
+/*Formatting for the icon that when clicked causes the dropdown menu to appear*/
+
+#nav-icon {       /*Icon to show dropdown menu*/
+  display: inline-block;
+  cursor: pointer;
+}
+
+#dropdown-icon-container {    /*Container for dropdown menu icon*/
+  display: none;
+  height: max-content;
+}
+
+.bar1, .bar2, .bar3 {   /*Formatting for the bars that make up the dropdown menu icon*/
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {   /*Transition for the top bar in the dropdown menu icon*/
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}   /*Transition for middle bar in the dropdown menu icon*/
+
+.change .bar3 {   /*Transition for bottom bar in the dropdown menu icon*/
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*Sub-menu for portfolio*/
+.sub-menu { /*Formatting for dropdown sub-menu*/
+  position: absolute;
+  background-color: #E8E8E8;
+  text-align: left;
+  margin-top: 10px;
+  color: black;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(1em);
+  transition: all 0.2s ease-in-out 0s, visibility 0s linear 0s;
+}
+
+.sub-menu ul { /*Formatting for list making up sub-menu*/
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-menu li { /*formatting for list items making up sub-menu*/
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  line-height: 28px;
+}
+
+.portfolio-menu-item:hover .sub-menu{ /*Animate dropdown of sub-menu*/
+  display: block;
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  transform: translateY(-10px);
+  transition-delay: 0.2;
+}
+
+.portfolio-menu-item:hover {
+  height: 40px;
+  justify-content:center;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.sub-menu-item:hover {  /*Change colour of sub-menu item on hover*/
+  color: #5A5A5A;
+  cursor: pointer;
+}
+
+.dropdown-portfolio .sub-menu-item:hover {
+  color: #5A5A5A;
+}
+
+.dropdown-portfolio .sub-menu-item {
+  display: none;
+  width: 100%!important;
+  position: static  ;
+  margin: auto;
+  top: 0px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: grey;
+
+}
+
+.portfolio-shown {
+  display: flex;
+}
+
+.portfolio-links-shown .sub-menu-item{
+  display: flex;
+}
+
+
+.current .menu-text {
+  text-decoration: underline;
+}

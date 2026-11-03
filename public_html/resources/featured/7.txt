@@ -1,0 +1,17 @@
+--Background Image--
+resources/images/featured/moth3.jpg
+
+--Title--
+Moths of Yanayacu
+
+--Link--
+yanayacu_moths
+
+--Date--
+April 1, 2012
+
+--Preview--
+In December 2021 I spent two and a half weeks volunteering at the Yanayacu 
+Biological Station on the east slope of the Ecuadorian Andes. During my 
+time there I photographed and identified close to 200 species of moths at 
+the station’s light sheet.

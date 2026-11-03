@@ -1,0 +1,13 @@
+--Background Image--
+../resources/images/featured/nachiket.jpg
+
+--Title--
+Nachiket Children's Libraries
+
+--Link--
+https://nachiketchildrenslibraries.org
+
+--Preview--
+My first web development project was creating a website for Nachiket 
+Children’s Libraries, a nonprofit founded by my grandmother Asha 
+Pawagi dedicated to promoting literacy in rural India.

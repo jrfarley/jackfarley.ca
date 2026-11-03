@@ -1,0 +1,103 @@
+.bio-display {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.image-showcase-container {
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-showcase-container-with-caption {
+  width: 35%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.image-showcase {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.showcase-image-container {
+  width: max-content;
+  height: 100%;
+  display: none;
+}
+
+.showcase-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.right-arrow{
+  position: relative;
+  right: 32px;
+}
+
+.left-arrow {
+  position: relative;
+  left: 32px;
+}
+
+.bio-text {
+  width: 50%;
+  flex-grow: 2;
+  padding-left: 52px;
+  padding-right: 10px;
+}
+
+.bio-title {
+  width: 90%;
+  font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+  .bio-display {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .image-showcase-container {
+    width: 100% !important;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .image-showcase-container-with-caption {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .bio-text{
+    width: 100%;
+    padding: 0px !important;
+    padding-top: 20px;
+  }
+  .bio-title {
+    text-align: center;
+    width: 100%;
+  }
+}

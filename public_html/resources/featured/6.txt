@@ -1,0 +1,13 @@
+--Background Image--
+../resources/images/featured/jbsp.jpg
+
+--Title--
+Blog
+
+--Link--
+blog.html
+
+--Preview--
+To learn more about my adventures check out my blog! Above is a photo of 
+me and my coworkers conducting shorebird surveys on the James Bay coast of 
+Northern Ontario. 

@@ -1,0 +1,267 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+  <head> 
+    <link rel="preload" href="resources/fonts/cinzel-bold.ttf" as="font"> 
+    <link rel="preload" href="resources/fonts/OpenSans.ttf" as="font"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet"> 
+    <link href="resources/css/index.css" type="text/css" rel="stylesheet"> 
+    <link href="resources/css/header.css" type="text/css" rel="stylesheet"> 
+    <link href="resources/css/footer.css" type="text/css" rel="stylesheet"> 
+    <link href="resources/css/gallery.css" type="text/css" rel="stylesheet"> 
+    <title>Jack Farley | Photography</title> 
+    <link rel="icon" href="resources/icons/favicon.ico"> 
+    <link rel="canonical" href="https://jackfarley.ca/photography"> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head> 
+
+  <body> 
+
+    <!-- Full-screen expanded lightbox modal (hidden by default, renders above header with high z-index) -->
+    <div id="modal" onclick="closeModal();" style="display: none; position: fixed; z-index: 999999; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.9); justify-content: center; align-items: center;"> 
+      <span id="close" style="position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span> 
+      <div id="modal-content-caption" style="display: flex; flex-direction: column; align-items: center; max-width: 95vw; max-height: 95vh;"> 
+        <img id="modal-content" alt="" onContextMenu="return false;" style="max-width: 95vw; max-height: 85vh; width: auto; height: auto; object-fit: contain;"> 
+        <div id="caption" style="color: #ccc; margin-top: 10px; text-align: center;"> 
+          <p>Hello World</p> 
+        </div> 
+      </div> 
+    </div> 
+
+    <div data-site-header></div>
+ 
+
+    <div class="content-container" style="margin-top: var(--max-header-height);"> <!--Main image--> 
+      <div class="content" style="overflow: visible; padding-top: 20px; padding-bottom: 20px;"> 
+        <h1 style="width: 100%; text-align: center;">Photography</h1> 
+        <div id="gallery"> 
+           
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Cedar Waxwing in Toronto, Ontario" id="cedw.jpg" onContextMenu="return false;" onclick="openModal('cedw.jpg');" src="resources/images/gallery-medium/cedw.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Mute Swans in Toronto, Ontario" id="musw.jpg" onContextMenu="return false;" onclick="openModal('musw.jpg');" src="resources/images/gallery-medium/musw.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Snowy Owl in Toronto, Ontario" id="snow.jpg" onContextMenu="return false;" onclick="openModal('snow.jpg');" src="resources/images/gallery-medium/snow.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Yellow-flecked Glassfrogs in the Esmaraldas Province, Ecuador" id="frog2.jpg" onContextMenu="return false;" onclick="openModal('frog2.jpg');" src="resources/images/gallery-medium/frog2.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Atlantic Puffins in Newfoundland" id="atpu.jpg" onContextMenu="return false;" onclick="openModal('atpu.jpg');" src="resources/images/gallery-medium/atpu.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Hemeroblemma laguerrei in the Napo Province, Ecuador" id="moth3.jpg" onContextMenu="return false;" onclick="openModal('moth3.jpg');" src="resources/images/gallery-medium/moth3.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Plate-billed Mountain-Toucan at Balcon Tumpiki, Ecuador" id="pbmt.jpg" onContextMenu="return false;" onclick="openModal('pbmt.jpg');" src="resources/images/gallery-medium/pbmt.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Greater Roadrunner in Arizona" id="grro.jpg" onContextMenu="return false;" onclick="openModal('grro.jpg');" src="resources/images/gallery-medium/grro.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="European Rabbit in England" id="rabbit.jpg" onContextMenu="return false;" onclick="openModal('rabbit.jpg');" src="resources/images/gallery-medium/rabbit.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="American Black Bear in Alberta" id="bear.jpg" onContextMenu="return false;" onclick="openModal('bear.jpg');" src="resources/images/gallery-medium/bear.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Wapiti in Alberta" id="elk.jpg" onContextMenu="return false;" onclick="openModal('elk.jpg');" src="resources/images/gallery-medium/elk.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Pine Grosbeak in Toronto, Ontario" id="pigr.jpg" onContextMenu="return false;" onclick="openModal('pigr.jpg');" src="resources/images/gallery-medium/pigr.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Canada Jay in Alberta" id="caja.jpg" onContextMenu="return false;" onclick="openModal('caja.jpg');" src="resources/images/gallery-medium/caja.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Broad-billed Hummingbird in Arizona" id="bbhu.jpg" onContextMenu="return false;" onclick="openModal('bbhu.jpg');" src="resources/images/gallery-medium/bbhu.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Sooty Grouse in Vancouver, BC" id="sogr.jpg" onContextMenu="return false;" onclick="openModal('sogr.jpg');" src="resources/images/gallery-medium/sogr.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Long-tailed Macaque in Singapore" id="macaque.jpg" onContextMenu="return false;" onclick="openModal('macaque.jpg');" src="resources/images/gallery-medium/macaque.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="American Pika in Alberta" id="pika.jpg" onContextMenu="return false;" onclick="openModal('pika.jpg');" src="resources/images/gallery-medium/pika.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Imbabura Tree Frog in Esmeraldas Province, Ecuador" id="frog1.jpg" onContextMenu="return false;" onclick="openModal('frog1.jpg');" src="resources/images/gallery-medium/frog1.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Cactus Wren in Arizona" id="cacw.jpg" onContextMenu="return false;" onclick="openModal('cacw.jpg');" src="resources/images/gallery-medium/cacw.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Bulwer&amp;#39;s Pheasant in Sabah, Malaysia" id="buph.jpg" onContextMenu="return false;" onclick="openModal('buph.jpg');" src="resources/images/gallery-medium/buph.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Semipalmated Sandpiper on James Bay, Ontario" id="sesa.jpg" onContextMenu="return false;" onclick="openModal('sesa.jpg');" src="resources/images/gallery-medium/sesa.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Crested Partridge in Sabah, Malaysia" id="crpa.jpg" onContextMenu="return false;" onclick="openModal('crpa.jpg');" src="resources/images/gallery-medium/crpa.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Steller&amp;#39;s Jay in Vancouver, BC" id="stja.jpg" onContextMenu="return false;" onclick="openModal('stja.jpg');" src="resources/images/gallery-medium/stja.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Epia muscosa in the Pichincha Province, Ecuador" id="moth1.jpg" onContextMenu="return false;" onclick="openModal('moth1.jpg');" src="resources/images/gallery-medium/moth1.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Barred Owl in Toronto, Ontario" id="bado.jpg" onContextMenu="return false;" onclick="openModal('bado.jpg');" src="resources/images/gallery-medium/bado.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Song Sparrow in Hastings County, Ontario" id="sosp.jpg" onContextMenu="return false;" onclick="openModal('sosp.jpg');" src="resources/images/gallery-medium/sosp.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Pyrrhuloxia in Arizona" id="pyrr.jpg" onContextMenu="return false;" onclick="openModal('pyrr.jpg');" src="resources/images/gallery-medium/pyrr.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Mountain Goats in Alberta" id="goats.jpg" onContextMenu="return false;" onclick="openModal('goats.jpg');" src="resources/images/gallery-medium/goats.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Long-tailed Jaeger in Hamilton, Ontario" id="jaeger.jpg" onContextMenu="return false;" onclick="openModal('jaeger.jpg');" src="resources/images/gallery-medium/jaeger.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Least Bittern in Toronto, Ontario" id="lebi.jpg" onContextMenu="return false;" onclick="openModal('lebi.jpg');" src="resources/images/gallery-medium/lebi.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="American Flamingos in Celestun, Mexico" id="amfl.jpg" onContextMenu="return false;" onclick="openModal('amfl.jpg');" src="resources/images/gallery-medium/amfl.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Bighorn Sheep in Alberta" id="sheep.jpg" onContextMenu="return false;" onclick="openModal('sheep.jpg');" src="resources/images/gallery-medium/sheep.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Osprey in Hastings County, Ontario" id="ospr.jpg" onContextMenu="return false;" onclick="openModal('ospr.jpg');" src="resources/images/gallery-medium/ospr.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Northern Waterthrush in Hastings County, Ontario" id="nowa.jpg" onContextMenu="return false;" onclick="openModal('nowa.jpg');" src="resources/images/gallery-medium/nowa.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="Hypercompe nemophila in the Napo Province, Ecuador" id="moth4.jpg" onContextMenu="return false;" onclick="openModal('moth4.jpg');" src="resources/images/gallery-medium/moth4.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+                <!-- Image --> 
+                <div class="gallery-image-container"> 
+                  <img alt="White-tailed Deer on Georgian Bay, Ontario" id="deer.jpg" onContextMenu="return false;" onclick="openModal('deer.jpg');" src="resources/images/gallery-medium/deer.jpg" class="gallery-image"> 
+                </div> 
+                <!-- --- --> 
+               
+        </div> 
+      </div> 
+    </div> 
+
+    <div data-site-footer></div> 
+
+    <script src="resources/js/site.js"></script>
+</body> 
+
+</html>
