@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Non-home HTML pages use a noindex robots meta tag.
