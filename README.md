@@ -1,11 +1,10 @@
 # jackfarley.ca
 
-Static website source for jackfarley.ca. The deployable site is in `public_html/`.
+Static website source for jackfarley.ca. The deployable site is in the repository root.
 
-To preview locally, serve that directory over HTTP so the shared header and footer can load:
+To preview locally, serve the repository root over HTTP so the shared header and footer can load:
 
 ```sh
-cd public_html
 python3 -m http.server 8000
 ```
 
